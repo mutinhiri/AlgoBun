@@ -5,5 +5,9 @@ class SayController < ApplicationController
 
   def goodbye
     @files = Dir.glob('*')
-  end 
+
+    @files.each do |file|
+     "file name is #{file}"
+    end
+  end
 end
